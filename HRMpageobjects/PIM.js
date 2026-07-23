@@ -33,9 +33,7 @@ class PIMPage {
       await this.middleName.fill(employee.middleName);
       await this.lastName.fill(employee.lastName);
       await this.saveBTn.click();
-      await expect(this.fullnameDisplay).toBeVisible({
-        timeout: 50000,
-      });
+      await expect(this.fullnameDisplay).toBeVisible();
       const expectedName = `${employee.firstName} ${employee.lastName}`;
       await expect(this.fullnameDisplay).toHaveText(expectedName);
       console.log(await this.fullnameDisplay.textContent());
