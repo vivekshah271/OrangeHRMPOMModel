@@ -6,7 +6,7 @@
     "webTest": "npx playwright test --grep @Web",
     "report": "npx allure generate allure-results --clean",
     "open-report": "npx allure open allure-report",
-    "test:report": "npx playwright test && npx allure generate allure-results --clean && npx allure open allure-report"
+    "test:report": "npx playwright test"
   },
   "keywords": [],
   "author": "",
