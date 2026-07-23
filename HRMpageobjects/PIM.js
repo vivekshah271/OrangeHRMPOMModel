@@ -22,9 +22,7 @@ class PIMPage {
 
   async NavigateToAddEmployee() {
     await this.PMIBtn.click();
-    await expect(this.addBtn).toBeVisible({
-      timeout: 10000,
-    });
+    await expect(this.addBtn).toBeVisible();
     await this.addBtn.click();
     await expect(this.verifyText).toHaveText("Add Employee");
   }
