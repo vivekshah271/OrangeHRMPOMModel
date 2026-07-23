@@ -23,6 +23,7 @@ const config = {
         browserName: "chromium",
         headless: false,
         screenshot: "on",
+        video: "retain-on-failure",
         trace: "retain-on-failure",
       },
     },
@@ -32,8 +33,9 @@ const config = {
         browserName: "webkit",
         headless: false,
         screenshot: "on",
+        video: "retain-on-failure",
         trace: "retain-on-failure",
-        ...devices['iPhone 15']
+        
       },
     },
   ],
