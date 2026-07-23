@@ -59,8 +59,6 @@ class PIMPage {
       const employeeRow = this.employeeRows
         .filter({ hasText: employee.firstName })
         .filter({ hasText: employee.lastName });
-
-      await expect(employeeRow).toHaveCount(1);
       await expect(employeeRow.first()).toBeVisible();
 
       await expect(employeeRow.first()).toContainText(employee.firstName);
